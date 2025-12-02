@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS products (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(200) NOT NULL,
+  description TEXT,
+  price NUMERIC(10,2) DEFAULT 0,
+  quantity INT DEFAULT 0,
+  "createdAt" TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  "updatedAt" TIMESTAMP WITH TIME ZONE DEFAULT now()
+);
